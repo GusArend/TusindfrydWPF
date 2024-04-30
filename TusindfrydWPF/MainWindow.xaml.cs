@@ -1,13 +1,5 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
+﻿using System.Windows;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace TusindfrydWPF
 {
@@ -17,13 +9,13 @@ namespace TusindfrydWPF
     public partial class MainWindow : Window
     {
         private List<Flowersort> flowersorts;
-        
+
 
         public MainWindow()
         {
             InitializeComponent();
             flowersorts = new List<Flowersort>();
-            
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -40,18 +32,20 @@ namespace TusindfrydWPF
                         flowersorts.Add(flowersort);
                         UpdateFlowersortList();
                         ShowStatusMessage("Flowersort added successfully.", "green");
-                    } else
+                    }
+                    else
                     {
                         ShowStatusMessage("Cancelled.", "blue");
                     }
-                    
-                    
+
+
                 }
                 else
                 {
                     ShowStatusMessage("Failed to add flowersort.", "red");
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 ShowStatusMessage(ex.Message, "red");
             }

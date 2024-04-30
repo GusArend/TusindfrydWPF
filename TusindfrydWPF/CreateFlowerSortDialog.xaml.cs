@@ -26,12 +26,13 @@ namespace TusindfrydWPF
                 flowersort.ProductionTime = ParseInt(tbProdTime.Text.Trim());
                 flowersort.HalfLifeTime = ParseInt(tbHalfLifeTime.Text.Trim());
                 flowersort.Size = ParseInt(tbSize.Text.Trim());
-            } else
+            }
+            else
             {
                 this.DialogResult = false;
                 this.Close();
             }
-           
+
         }
 
         private int ParseInt(string text)
