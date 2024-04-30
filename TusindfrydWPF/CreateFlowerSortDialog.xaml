@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TusindfrydWPF"
         mc:Ignorable="d"
-        Title="CreateFlowerSortDialog" Height="400" Width="400">
+        Title="CreateFlowerSortDialog" Height="450" Width="450">
     <Grid>
         <Label Content="Navn:" HorizontalAlignment="Left" Margin="17,32,0,0" VerticalAlignment="Top"/>
         <Label Content="Billed (sti):" HorizontalAlignment="Left" Margin="17,63,0,0" VerticalAlignment="Top"/>
